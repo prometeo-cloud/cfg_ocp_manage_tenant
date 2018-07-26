@@ -1,0 +1,11 @@
+---
+- name: Deleting access groups in the LDAP server
+  include_role:
+    name: ocp_manage_tenant_ldap
+    tasks_from: delete_groups
+
+- name: Deleting OCP project(s) from tenant space
+  include_role:
+    name: ocp_manage_tenant
+    tasks_from: delete_projects
+...

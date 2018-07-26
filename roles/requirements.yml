@@ -1,0 +1,6 @@
+---
+- name: ocp_manage_tenant_ldap
+  src: https://www.github.com/prometeo-cloud/ocp_manage_tenant_ldap.git
+
+- name: ocp_manage_tenant
+  src: https://www.github.com/prometeo-cloud/ocp_manage_tenant_with_oc.git

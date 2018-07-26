@@ -1,0 +1,11 @@
+---
+- name: Creating access groups in the LDAP server
+  include_role:
+    name: ocp_manage_tenant_ldap
+    tasks_from: create_groups
+
+- name: Adding OCP project(s) to tenant space
+  include_role:
+    name: ocp_manage_tenant
+    tasks_from: create_projects
+...

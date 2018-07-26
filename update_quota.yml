@@ -1,0 +1,7 @@
+---
+- name: Updating project(s) resource quota
+- name: "Updating tenant {{ tenant_name }} quota"
+  include_role:
+    name: ocp_manage_tenant
+    tasks_from: update_quota
+...

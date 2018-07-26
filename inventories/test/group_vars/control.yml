@@ -1,0 +1,43 @@
+---
+# service account token used to log into OCP
+ocp_token: {{ REPLACE WITH OCP TOKEN}}
+
+# Tenant Configuration
+# --------------------
+
+# the name of the tenant the project(s) belongs to
+tenant_name: Tenant_A
+
+# a list of projects to create or delete
+projects:
+  - name: DEV
+    description: "Development environment"
+    displayName: Development
+    cpu: 2
+    memory: 1
+  - name: TEST
+    description: "Functional Test environment"
+    displayName: "Functional Test"
+    cpu: 2
+    memory: 1
+  - name: DEMO
+    description: "Demo environment"
+    displayName: Demonstration
+    cpu: 2
+    memory: 1
+
+# LDAP Server Configuration
+# -------------------------
+
+# the URI of the ldap server where groups will be created (e.g. 'ldap://ldap_hostname:389/cn=users,cn=accounts, dc=eu-west-2,dc=compute,dc=internal?uid')
+ldap_server_uri: {{ REPLACE WITH LDAP server URI }}
+
+# the local admin username
+local_admin_dn: {{ REPLACE WITH LOCAL ADMIN DISTINGUISED NAME }}
+
+# the local admin password
+local_admin_pwd: {{ REPLACE WITH LOCAL ADMIN PASSWORD }}
+
+# the root object where OCP groups will be created (e.g. 'OU=Groups,OU=<<sub_OU_name>>,OU=<<main_OU_name>>,DC=<<domain>>,DC=com')
+group_dn: {{ REPLACE WITH OU DN }}
+...

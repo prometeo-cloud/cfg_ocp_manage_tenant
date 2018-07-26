@@ -112,7 +112,7 @@ How to invoke the role from a playbook:
             tasks_from: add_projects
 ```
 
-**Note:** other required variables are in the sample inventory file [here](./inventories/group_vars/control.yml).
+**Note:** other required variables are in the sample inventory file [here](./inventories/test/group_vars/control.yml).
 
 <a name="create-token"></a>
 ### How to create a service account token
